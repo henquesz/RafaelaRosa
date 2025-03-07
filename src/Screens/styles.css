@@ -1,0 +1,231 @@
+html {
+background-color: #f2f0ef;
+
+}
+::-webkit-scrollbar { overflow-y:hidden; }
+
+
+
+.fullscreen-container {
+    width: 100vw;
+    height: 98vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../Assets/retratos.jpg"); /* Caminho da imagem */
+    background-size: cover;
+    background-position: 80% 44%;
+    background-repeat: no-repeat;
+    color: white;
+  }  
+  
+  .subtitle {
+    font-size: 2rem;
+    margin-top: -0rem;
+  }
+
+  .typewriter {
+    color: white;
+    font-size: 8rem;
+    font-weight: bold;
+    position: relative;
+    z-index: 2;
+  }
+
+  .circle-title {
+    position: absolute;
+    left: 13%;
+    top: 25%;
+    width: 350px; /* Ajuste conforme necessário */
+    height: 350px;
+    border-radius: 50%;
+    border: 2px solid white;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    z-index: 1;
+  }
+  
+  
+  .header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background: transparent;
+    padding: 20px 0;
+  }
+  
+  .header-title {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 3rem;
+    text-align: left !important;
+  }
+  
+  .columns-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+    padding: 40px;
+  }
+  
+  .column {
+    width: 30%;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .header-title-card{
+    background-color: black;
+    width: 100%;
+    height: 2rem;
+  }
+  .header-cont-1{
+    margin-top: 1%;
+    width: 100%;
+    height: 45rem;
+    border: 1px solid black;
+    background-image: url('../Assets/gabriella.jpg');
+    background-size: cover;
+    background-position: 80% 44%;
+    background-repeat: no-repeat;
+  }
+  .header-cont-2{
+    margin-top: 1%;
+    width: 100%;
+    height: 45rem;
+    border: 1px solid black;
+    background-image: url('../Assets/rata.jpg');
+    background-size: cover;
+    background-position: 50% 60%;
+    background-repeat: no-repeat;
+  }
+  .header-cont-3{
+    margin-top: 1%;
+    width: 100%;
+    height: 45rem;
+    border: 1px solid black;
+    background-image: url('../Assets/tag.jpg');
+    background-size: cover;
+    background-position: 50% 44%;
+    background-repeat: no-repeat;
+  }
+  .about-container{
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+    padding: 5%;
+  }
+
+  .about-circle {
+    width: 350px;
+    height: 350px;
+    border: 0.5px solid white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 0px;
+    color: white;
+  }
+  
+  .about-text {
+    max-width: 900px;
+    font-size: 28px;
+    line-height: 1.5;
+    color: white
+  }
+
+  .contact-container{
+    margin-top: 50px;
+    padding: 5%;
+  }
+
+  .label-contact{
+  color: white;
+  width: 285px;
+  height: 50px;
+  background-color: black;
+  font-size: 30px;
+  padding: 10px 30px 10px 30px;
+  margin-bottom: 100px;
+  }
+
+  .contact-form {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .form-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  .form-input {
+    width: 90%;
+    height: 70px;
+    margin-right: 50px;
+    padding: 10px;
+    border-bottom: 4px solid black;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-radius: 5px;
+    background: transparent;
+    color: black;
+    font-size: 16px;
+  }
+  
+  .form-textarea {
+    width: 90%;
+    height: 100px;
+    padding: 10px;
+    border-bottom: 4px solid black;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-radius: 5px;
+    background: transparent;
+    color: white;
+    font-size: 16px;
+    resize: none;
+  }
+  
+  .form-button {
+    background: black;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  .footer-content{
+    background-color: black;
+    height: 6rem;
+  }

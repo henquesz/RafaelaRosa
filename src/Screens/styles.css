@@ -20,6 +20,7 @@ overflow-x: hidden;
     background-position: 80% 44%;
     background-repeat: no-repeat;
     color: white;
+    border-radius: 0px 0px 15px 15px;
   }  
   
   .subtitle {
@@ -267,7 +268,7 @@ overflow-x: hidden;
 
   .footer-container {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     padding: 16px;
     background-color: black;
 }
@@ -275,7 +276,7 @@ overflow-x: hidden;
 /* Agrupa os ícones e o e-mail */
 .footer-content {
     display: flex;
-    flex-direction: column;
+    flex-direction: initial;
     align-items: center;
     text-align: center;
     gap: 10px;
@@ -345,7 +346,7 @@ overflow-x: hidden;
     .typewriter{
       font-size: 4.5rem;
       font-weight: 500;
-      margin-top: 3rem;
+      margin-top: 4.5rem;
     }
     .circle-title{
       width: 220px;
@@ -364,5 +365,13 @@ overflow-x: hidden;
     }
     .label-contact{
       font-size: 30px;
+      width: 190px;
+      height: 35px;
+    }
+    .footer-container{
+    justify-content: center !important;
+    }
+    .footer-content{
+      flex-direction: column;
     }
 }

@@ -1,5 +1,7 @@
 import React from "react";
 import "./styles.css";
+import { FaWhatsapp, FaInstagram, FaLinkedin } from "react-icons/fa";
+
 
 export default function FullScreenDiv() {
   return (
@@ -12,7 +14,8 @@ export default function FullScreenDiv() {
       <div className="fullscreen-container">
         <div className="circle-title">
           Fotografia <br />
-          &AudioVisual
+          &AudioVisual <br />
+          →
         </div>
         <h1 className="typewriter">Rafaela Rosa</h1>
       </div>
@@ -32,7 +35,7 @@ export default function FullScreenDiv() {
       </div>
 
       <div className="about-container">
-        <div className="about-circle">Sobre →</div>
+        <div className="about-circle">Sobre <br /> →</div>
         <div className="about-text">
         Nascida e criada em São Paulo, Formada em produção audiovisual e cursando bacharelado em fotografia. Rafaela Rosa busva expressar sua visão através da imagem fotográfica. Com assinatura de direção de fotografia em curtas com participações em festivais como Satyricine Bijou em São Paulo e Zafic festival na Colômbia, também aproveita da linguagem do vídeo em suas produções artísticas. <br />
         Fotografia editorial, moda e eventos musicais são seus principais nichos profissionais, a fotografia de rua e a arquitetura espressa seu trabalho autoral. 
@@ -59,13 +62,21 @@ export default function FullScreenDiv() {
       </div>
 
       <footer className="footer-container">
-        <div className="footer-content">
-          <span className="footer-icon">📷</span>
-          <span className="footer-icon">📞</span>
-          <span className="footer-icon">🔗</span>
-          <span className="footer-email">email@example.com</span>
-        </div>
-      </footer>
+  <div className="footer-content">
+    <div className="icons-group">
+      <div className="icon-wrapper">
+        <FaWhatsapp className="icon" />
+      </div>
+      <div className="icon-wrapper">
+        <FaInstagram className="icon" />
+      </div>
+      <div className="icon-wrapper">
+        <FaLinkedin className="icon" />
+      </div>
+    </div>
+    <span className="footer-email">contato@rafaelarnfotografia</span>
+  </div>
+</footer>
     </div>
   );
 }

@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 html {
 background-color: #f2f0ef;
-
+overflow-x: hidden;
 }
 ::-webkit-scrollbar { overflow-y:hidden; }
 
@@ -27,8 +29,10 @@ background-color: #f2f0ef;
 
   .typewriter {
     color: white;
-    font-size: 8rem;
-    font-weight: bold;
+    font-size: 9rem;
+    font-family: "Tinos", serif;
+    font-weight: 500;
+    font-style: normal;
     position: relative;
     z-index: 2;
   }
@@ -40,15 +44,18 @@ background-color: #f2f0ef;
     width: 350px; /* Ajuste conforme necessário */
     height: 350px;
     border-radius: 50%;
-    border: 2px solid white;
+    border: 2px solid rgba(255, 255, 255, 0.37);
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: left;
-    font-size: 20px;
+    font-size: 32px;
     font-weight: bold;
     z-index: 1;
+    font-family: "Alumni Sans Pinstripe", sans-serif;
+    font-weight: 800;
+    font-style: normal;
   }
   
   
@@ -66,10 +73,13 @@ background-color: #f2f0ef;
   
   .header-title {
     color: white;
-    font-size: 24px;
+    font-size: 32px;
     font-weight: bold;
     margin-right: 3rem;
     text-align: left !important;
+    font-family: "Alumni Sans Pinstripe", sans-serif;
+    font-weight: 500;
+    font-style: normal;
   }
   
   .columns-container {
@@ -78,22 +88,28 @@ background-color: #f2f0ef;
     align-items: center;
     margin-top: 50px;
     padding: 40px;
-  }
-  
-  .column {
+    flex-wrap: wrap;
+    gap: 20px; /* Espaço entre as colunas quando quebram */
+}
+
+.column {
     width: 30%;
     text-align: center;
     color: white;
     font-size: 18px;
     font-weight: bold;
-    padding: 20px;
+    padding: 5px;
     border-radius: 10px;
-  }
+}
 
   .header-title-card{
     background-color: black;
     width: 100%;
     height: 2rem;
+    font-family: "Alumni Sans Pinstripe", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 25px;
   }
   .header-cont-1{
     margin-top: 1%;
@@ -125,14 +141,15 @@ background-color: #f2f0ef;
     background-position: 50% 44%;
     background-repeat: no-repeat;
   }
-  .about-container{
+  .about-container {
     background-color: black;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    gap: 40px;
     margin-top: 50px;
     padding: 5%;
-  }
+}
 
   .about-circle {
     width: 350px;
@@ -142,18 +159,23 @@ background-color: #f2f0ef;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 18px;
+    font-size: 32px;
     font-weight: bold;
-    margin-right: 0px;
     color: white;
-  }
-  
-  .about-text {
+    font-family: "Alumni Sans Pinstripe", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.about-text {
     max-width: 900px;
-    font-size: 28px;
+    font-size: 32px;
     line-height: 1.5;
-    color: white
-  }
+    color: white;
+    font-family: "Alumni Sans Pinstripe", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
 
   .contact-container{
     margin-top: 50px;
@@ -165,9 +187,13 @@ background-color: #f2f0ef;
   width: 285px;
   height: 50px;
   background-color: black;
-  font-size: 30px;
+  font-size: 45px;
   padding: 10px 30px 10px 30px;
   margin-bottom: 100px;
+  
+  font-family: "Alumni Sans Pinstripe", sans-serif;
+  font-weight: 600;
+  font-style: normal;
   }
 
   .contact-form {
@@ -221,11 +247,118 @@ background-color: #f2f0ef;
     padding: 10px 15px;
     border: none;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 25px;
     margin-top: 10px;
+    margin-left: 70%;
+    
+    font-family: "Alumni Sans Pinstripe", sans-serif;
+  font-weight: 800;
+  font-style: normal;
   }
 
   .footer-content{
     background-color: black;
     height: 6rem;
   }
+
+  .footer-email{
+    color: white
+  }
+
+  .footer-container {
+    display: flex;
+    justify-content: center;
+    padding: 16px;
+    background-color: black;
+}
+
+/* Agrupa os ícones e o e-mail */
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+/* Mantém os ícones lado a lado */
+.icons-group {
+    display: flex;
+    gap: 16px;
+}
+
+/* Estilo dos ícones */
+.icon-wrapper {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2d2d2d;
+    border-radius: 50%;
+}
+
+.icon {
+    color: white;
+    font-size: 24px;
+}
+
+.footer-email {
+    color: white;
+    font-size: 18px;
+}
+
+  @media (max-width: 900px) {
+    .columns-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .column {
+        width: 80%; /* Ajusta a largura para melhor exibição */
+    }
+
+    .about-container {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .about-circle {
+      margin-right: 0; /* Remove qualquer deslocamento lateral */
+      width: 220px;
+      height: 220px;
+  }
+  
+  .about-text {
+      max-width: 100%; /* Garante que o texto não fique muito estreito */
+      margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 600px) {
+    .column {
+        width: 100%; /* Ocupa toda a largura da tela */
+    }
+    .about-text{
+      font-size: 25px;
+    }
+    .typewriter{
+      font-size: 4.5rem;
+      font-weight: 500
+    }
+    .circle-title{
+      width: 220px;
+      height: 220px;
+      top: 140px;
+      left: 90px;
+    }
+    .fullscreen-container{
+      background-position: 50% 10%;
+    }
+    .header-title{
+      margin-right: 1rem;
+    }
+    .contact-form{
+      margin-left: 15px;
+    }
+}
